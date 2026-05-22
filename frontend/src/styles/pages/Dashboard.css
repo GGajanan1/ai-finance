@@ -1,0 +1,52 @@
+/* ============================================================
+   Dashboard Page Styles
+   ============================================================ */
+
+/* KPI grid override (tighter min-width than default widget-grid) */
+.dashboard-kpi-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+  margin-top: 24px;
+}
+
+/* Two-panel row below KPIs */
+.dashboard-widget-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+  margin-top: 32px;
+}
+
+/* Sentiment panel header row */
+.dashboard-sentiment-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+/* Autocomplete search wrapper in dashboard (smaller) */
+.dashboard-search-wrapper {
+  position: relative;
+  width: 200px;
+}
+
+/* Watchlist panel header row */
+.dashboard-watchlist-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+/* Watchlist add form */
+.watchlist-add-form {
+  display: flex;
+  gap: 8px;
+}
+
+/* Watchlist font weight for ticker column */
+.watchlist-price {
+  font-weight: 500;
+}

@@ -1,0 +1,97 @@
+{
+  "nav": {
+    "dashboard": "डैशबोर्ड",
+    "equities": "इक्विटी",
+    "sentiment": "भावना",
+    "macro": "मैक्रो",
+    "settings": "सेटिंग्स",
+    "systemStatus": "सिस्टम स्थिति",
+    "allSystemsOnline": "सभी सिस्टम ऑनलाइन"
+  },
+  "dashboard": {
+    "title": "बाज़ार अवलोकन",
+    "subtitle": "रियल-टाइम संस्थागत विश्लेषण",
+    "yieldCurve": "यील्ड कर्व (10Y-2Y)",
+    "inflationRate": "मुद्रास्फीति दर",
+    "fedFundsRate": "फेड फंड्स दर",
+    "finbertSentiment": "FinBERT भावना",
+    "searchTicker": "टिकर खोजें",
+    "analyzingHeadlines": "नवीनतम समाचार विश्लेषण हो रहा है...",
+    "noSentimentData": "{{ticker}} के लिए कोई भावना डेटा उपलब्ध नहीं है।",
+    "activeWatchlist": "सक्रिय वॉचलिस्ट",
+    "live": "● लाइव",
+    "addTicker": "टिकर जोड़ें",
+    "watchlistEmpty": "वॉचलिस्ट खाली है",
+    "source": "स्रोत: yfinance"
+  },
+  "equities": {
+    "title": "इक्विटी",
+    "subtitle": "व्यक्तिगत शेयरों को खोजें और विश्लेषण करें",
+    "searchPlaceholder": "टिकर या कंपनी खोजें...",
+    "analyzing": "AI एजेंट विश्लेषण चल रहा है...",
+    "priceHistory": "मूल्य इतिहास",
+    "aiAnalysis": "AI एजेंट विश्लेषण",
+    "noData": "कोई डेटा उपलब्ध नहीं"
+  },
+  "sentiment": {
+    "title": "भावना विश्लेषण",
+    "subtitle": "FinBERT संचालित समाचार भावना",
+    "analyzeCustom": "कस्टम समाचार विश्लेषण",
+    "placeholder": "कोई समाचार लेख या शीर्षक यहाँ पेस्ट करें...",
+    "analyze": "विश्लेषण करें",
+    "analyzing": "विश्लेषण हो रहा है...",
+    "results": "परिणाम",
+    "confidence": "विश्वास",
+    "agentSummary": "एजेंट सारांश"
+  },
+  "macro": {
+    "title": "समष्टि आर्थिक डेटा",
+    "subtitle": "विश्व बैंक और FRED के माध्यम से वैश्विक आर्थिक संकेतक",
+    "customizeTable": "तालिका अनुकूलित करें",
+    "dashboardConfig": "डैशबोर्ड कॉन्फ़िगरेशन",
+    "trackedCountries": "ट्रैक किए गए देश (ISO-3)",
+    "trackedIndicators": "ट्रैक किए गए संकेतक",
+    "selectIndicator": "-- जोड़ने के लिए एक संकेतक चुनें --",
+    "globalIndicators": "वैश्विक आर्थिक संकेतक",
+    "loadingData": "Redis Cache के माध्यम से लाइव डेटा लोड हो रहा है...",
+    "dataUnavailable": "डेटा अनुपलब्ध",
+    "countryPlaceholder": "उदा. JPN, GBR"
+  },
+  "settings": {
+    "title": "उपयोगकर्ता सेटिंग्स",
+    "subtitle": "अपनी AI Finance Toolkit प्राथमिकताएँ कॉन्फ़िगर करें",
+    "defaultTicker": "डिफ़ॉल्ट डैशबोर्ड टिकर",
+    "defaultTickerHint": "डैशबोर्ड पर विशिष्ट समाचार लाने के लिए उपयोग किया जाता है। सामान्य बाज़ार समाचार के लिए खाली छोड़ें।",
+    "defaultTickerPlaceholder": "उदा. AAPL (सामान्य के लिए खाली छोड़ें)",
+    "newsLimit": "विश्लेषण करने के लिए समाचार लेखों की संख्या",
+    "newsLimitHint": "FinBERT कितने हालिया लेखों का विश्लेषण करे (अधिकतम: 20)।",
+    "refreshInterval": "डैशबोर्ड ऑटो-रिफ्रेश अंतराल (सेकंड)",
+    "language": "प्रदर्शन भाषा",
+    "languageHint": "एप्लिकेशन इंटरफ़ेस के लिए भाषा चुनें।",
+    "save": "सेटिंग्स सहेजें",
+    "saved": "सेटिंग्स सफलतापूर्वक सहेजी गईं!",
+    "group": {
+      "international": "अंतर्राष्ट्रीय",
+      "indian": "भारतीय भाषाएँ"
+    }
+  },
+  "common": {
+    "loading": "लोड हो रहा है...",
+    "error": "एक त्रुटि हुई",
+    "retry": "पुनः प्रयास करें",
+    "cancel": "रद्द करें",
+    "confirm": "पुष्टि करें",
+    "na": "उपलब्ध नहीं",
+    "aiFinance": "AI Finance",
+    "hedgeFundStack": "Hedge Fund Stack"
+  },
+  "indicators": {
+    "NY.GDP.MKTP.KD.ZG": "GDP वृद्धि (वार्षिक %)",
+    "FP.CPI.TOTL.ZG": "मुद्रास्फीति दर (%)",
+    "SL.UEM.TOTL.ZS": "बेरोजगारी दर (%)",
+    "FR.INR.REAL": "वास्तविक ब्याज दर (%)",
+    "BN.CAB.XOKA.GD.ZS": "चालू खाता शेष (GDP का %)",
+    "GC.DOD.TOTL.GD.ZS": "केंद्र सरकार ऋण (GDP का %)",
+    "BX.KLT.DINV.WD.GD.ZS": "प्रत्यक्ष विदेशी निवेश (GDP का %)"
+  }
+}

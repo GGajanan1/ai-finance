@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+venv/
+.venv/
+env/
+__pypackages__/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+htmlcov/
+.dist-info/
+.build/
+*.cover
+.coverage
+.coverage.*
+nosetests.xml
+coverage.xml
+*.pytest_cache/
+.ipynb_checkpoints/
+
+# Environment
+.env
+.env.*
+*.env
+
+# VS Code / IDE
+.vscode/
+.idea/
+.DS_Store
+
+# Python bytecode
+*.pyc
+*.pyo
+*.pyd

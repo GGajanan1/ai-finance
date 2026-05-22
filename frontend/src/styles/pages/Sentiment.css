@@ -1,0 +1,183 @@
+/* ============================================================
+   Sentiment Page Styles
+   ============================================================ */
+
+/* Analytics row at the top (meter, breakdown, signal) */
+.sentiment-analytics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+/* Meter panel - center content */
+.sentiment-meter-panel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Main 2-column grid (headlines | custom analyzer) */
+.sentiment-main-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+/* Custom Analyzer panel fills column vertically */
+.sentiment-analyzer-panel {
+  display: flex;
+  flex-direction: column;
+}
+
+.sentiment-analyzer-panel h3 {
+  margin-bottom: 6px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.sentiment-analyzer-panel .section-label {
+  margin-bottom: 16px;
+}
+
+/* Analyzer form */
+.sentiment-analyzer-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Analyzer results area */
+.sentiment-results {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  overflow-y: auto;
+  flex: 1;
+}
+
+/* FinBERT result box */
+.finbert-result {
+  padding: 14px;
+  border-radius: 12px;
+}
+
+.finbert-result--positive {
+  background: rgba(16, 185, 129, 0.08);
+  border: 1px solid rgba(16, 185, 129, 0.25);
+}
+
+.finbert-result--negative {
+  background: rgba(239, 68, 68, 0.08);
+  border: 1px solid rgba(239, 68, 68, 0.25);
+}
+
+.finbert-result--neutral {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.finbert-result__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6px;
+}
+
+.finbert-result__title {
+  font-weight: 600;
+  font-size: 0.88rem;
+}
+
+.finbert-result__score {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+}
+
+/* Groq result box */
+.groq-result {
+  padding: 14px;
+  border-radius: 12px;
+  background: rgba(79, 70, 229, 0.06);
+  border: 1px solid rgba(79, 70, 229, 0.2);
+}
+
+.groq-result__title {
+  font-weight: 600;
+  font-size: 0.88rem;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--accent-primary);
+}
+
+.groq-result__body {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+/* Signal card inside analytics grid */
+.signal-card {
+  padding: 12px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.signal-card--positive {
+  background: var(--success-bg);
+  border: 1px solid rgba(16, 185, 129, 0.3);
+}
+
+.signal-card--negative {
+  background: var(--danger-bg);
+  border: 1px solid rgba(239, 68, 68, 0.3);
+}
+
+.signal-card--neutral {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.signal-card__title {
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.signal-card__subtitle {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+
+.signal-counts {
+  display: flex;
+  gap: 8px;
+  justify-content: space-between;
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+}
+
+/* Sentiment meter SVG display */
+.sentiment-meter-score {
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+/* Submit button loading state */
+.btn-primary:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.btn-primary--submit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}

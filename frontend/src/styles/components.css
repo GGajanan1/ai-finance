@@ -1,0 +1,470 @@
+/* ============================================================
+   Shared Component Styles
+   Reusable classes used across multiple pages
+   ============================================================ */
+
+/* Page Header ------------------------------------------------ */
+.page-header {
+  margin-bottom: 32px;
+}
+
+.page-header h1 {
+  font-size: 2rem;
+  margin-bottom: 8px;
+}
+
+.page-header p {
+  color: var(--text-muted);
+}
+
+.page-header--row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.page-header--row .page-header {
+  margin-bottom: 0;
+}
+
+/* Form Inputs ------------------------------------------------ */
+.form-input {
+  width: 100%;
+  padding: 12px 16px;
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid var(--border-strong);
+  border-radius: 8px;
+  color: white;
+  font-size: 0.9rem;
+  font-family: inherit;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.form-input:focus {
+  border-color: var(--accent-primary);
+}
+
+.form-input--sm {
+  padding: 6px 12px;
+  width: 120px;
+  border-radius: 6px;
+}
+
+.form-input--search {
+  padding: 12px 16px 12px 48px;
+  font-size: 1rem;
+  border-radius: 8px;
+}
+
+.form-input--search-sm {
+  padding: 6px 12px 6px 32px;
+  font-size: 0.9rem;
+  border-radius: 6px;
+}
+
+.form-input--textarea {
+  resize: vertical;
+  line-height: 1.6;
+}
+
+.form-select {
+  width: 100%;
+  padding: 10px 14px;
+  background: rgba(0, 0, 0, 0.25);
+  border: 1px solid var(--border-strong);
+  border-radius: 8px;
+  color: white;
+  font-family: inherit;
+  font-size: 0.9rem;
+  outline: none;
+  cursor: pointer;
+  flex: 1;
+  transition: border-color 0.2s ease;
+  appearance: auto; /* keep native arrow */
+}
+
+.form-select:focus {
+  border-color: var(--accent-primary);
+}
+
+/* Style the optgroup label inside the language picker */
+.form-select optgroup {
+  background: var(--bg-secondary);
+  color: var(--text-muted);
+  font-size: 0.78rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 4px 0;
+}
+
+.form-select option {
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+  padding: 6px 12px;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.form-hint {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-top: 4px;
+}
+
+.form-error {
+  color: var(--danger);
+  font-size: 0.83rem;
+}
+
+/* Search Field Wrapper --------------------------------------- */
+.search-wrapper {
+  position: relative;
+  flex: 1;
+}
+
+.search-icon {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-muted);
+  pointer-events: none;
+}
+
+.search-icon--sm {
+  left: 10px;
+}
+
+.search-spinner {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-muted);
+}
+
+.search-spinner--sm {
+  right: 10px;
+}
+
+/* Autocomplete Dropdown -------------------------------------- */
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  margin-top: 8px;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-strong);
+  border-radius: 8px;
+  max-height: 300px;
+  overflow-y: auto;
+  z-index: 50;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+.dropdown-menu--sm {
+  margin-top: 4px;
+  border-radius: 6px;
+  max-height: 200px;
+}
+
+.dropdown-item {
+  padding: 12px 16px;
+  cursor: pointer;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background 0.15s ease;
+}
+
+.dropdown-item:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.dropdown-item--sm {
+  padding: 8px 12px;
+  font-size: 0.85rem;
+}
+
+.dropdown-item__symbol {
+  font-weight: 600;
+}
+
+.dropdown-item__name {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+/* Refresh Button --------------------------------------------- */
+.refresh-btn {
+  background: transparent;
+  border: 1px solid var(--border-strong);
+  border-radius: 8px;
+  padding: 6px 10px;
+  color: var(--text-secondary);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.8rem;
+  transition: all 0.2s ease;
+}
+
+.refresh-btn:hover {
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--text-primary);
+}
+
+/* KPI Card --------------------------------------------------- */
+.kpi-card-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.kpi-card-value {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.kpi-card-label {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  margin-bottom: 8px;
+}
+
+.kpi-icon-box {
+  padding: 8px;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+.kpi-icon-box--success {
+  background: var(--success-bg);
+  color: var(--success);
+}
+
+.kpi-icon-box--danger {
+  background: var(--danger-bg);
+  color: var(--danger);
+}
+
+.kpi-icon-box--accent {
+  background: var(--accent-glow);
+  color: var(--accent-primary);
+}
+
+/* Article Card (Sentiment/Dashboard) ------------------------- */
+.article-card {
+  padding: 10px 14px;
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.article-card--positive {
+  border-left: 4px solid var(--success);
+}
+
+.article-card--negative {
+  border-left: 4px solid var(--danger);
+}
+
+.article-card--neutral {
+  border-left: 4px solid rgba(255, 255, 255, 0.15);
+}
+
+.article-card__headline {
+  font-weight: 500;
+  font-size: 0.88rem;
+  flex: 1;
+}
+
+.article-card__meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.article-card__score {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+/* Dashboard article variant (slightly larger) */
+.article-card--lg {
+  padding: 16px;
+  border-radius: 8px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+}
+
+.article-card--lg .article-card__headline {
+  font-size: 0.9rem;
+  margin-bottom: 4px;
+}
+
+.article-card--lg .article-card__meta {
+  width: 100%;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+}
+
+/* Progress / Sentiment Bars ---------------------------------- */
+.sentiment-bar-row {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sentiment-bar__header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.82rem;
+  margin-bottom: 4px;
+  color: var(--text-secondary);
+}
+
+.sentiment-bar__label {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.sentiment-bar__track {
+  height: 5px;
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 999px;
+}
+
+.sentiment-bar__fill {
+  height: 100%;
+  border-radius: 999px;
+  transition: width 1s ease;
+}
+
+/* Confidence bar (FinBERT) */
+.confidence-bar__header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  margin-bottom: 4px;
+  margin-top: 8px;
+}
+
+.confidence-bar__track {
+  height: 6px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.confidence-bar__fill {
+  height: 100%;
+  border-radius: 999px;
+  transition: width 0.8s ease;
+}
+
+/* Agent Loading State ---------------------------------------- */
+.agent-loading {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-muted);
+  gap: 16px;
+}
+
+/* Panel Header Row ------------------------------------------- */
+.panel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.panel-header h3 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Section Label ---------------------------------------------- */
+.section-label {
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+  margin-bottom: 12px;
+}
+
+/* Loading State ---------------------------------------------- */
+.loading-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--text-muted);
+}
+
+/* Watchlist Table -------------------------------------------- */
+.watchlist-table {
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
+}
+
+.watchlist-table thead tr {
+  border-bottom: var(--glass-border);
+  color: var(--text-secondary);
+}
+
+.watchlist-table th {
+  padding-bottom: 12px;
+  font-weight: 500;
+}
+
+.watchlist-table td {
+  padding: 16px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.watchlist-table td:last-child {
+  text-align: right;
+}
+
+.watchlist-remove-btn {
+  background: transparent;
+  border: none;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: color 0.2s ease;
+  padding: 4px;
+}
+
+.watchlist-remove-btn:hover {
+  color: var(--danger);
+}
+
+/* Live Badge ------------------------------------------------- */
+.live-badge {
+  font-size: 0.75rem;
+  color: var(--success);
+  margin-left: 8px;
+  font-weight: normal;
+}
