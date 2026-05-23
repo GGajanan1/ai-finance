@@ -1,10 +1,10 @@
- """Technical indicator computation using pandas-ta."""
+"""Technical indicator computation using pandas-ta."""
 import pandas as pd
 
 try:
     import pandas_ta as ta
     HAS_TA = True
-except ImportError:
+except ImportError: 
     HAS_TA = False
     print("⚠️  pandas-ta not installed — indicators unavailable. Run: pip install pandas-ta")
 
